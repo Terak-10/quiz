@@ -30,7 +30,7 @@ spainA.addEventListener("click", incorrectAnswerSpain);
 spainB.addEventListener("click", function() {
     document.querySelector(".spain-correct").classList.remove("hidden");
     document.querySelector(".spain-incorrect").classList.add("hidden");
-    currentScore++;
+    if(currentScore < 4) currentScore++;
     score.textContent = `SCORE: ${currentScore} / 4`;
 });
 
@@ -48,7 +48,7 @@ italyB.addEventListener("click", incorrectAnswerItaly);
 italyC.addEventListener("click", function() {
     document.querySelector(".italy-correct").classList.remove("hidden");
     document.querySelector(".italy-incorrect").classList.add("hidden");
-    currentScore++;
+    if(currentScore < 4) currentScore++;
     score.textContent = `SCORE: ${currentScore} / 4`;
 });
 
@@ -64,7 +64,7 @@ germanyB.addEventListener("click", incorrectAnswerGermany);
 germanyC.addEventListener("click", function() {
     document.querySelector(".germany-correct").classList.remove("hidden");
     document.querySelector(".germany-incorrect").classList.add("hidden");
-    currentScore++;
+    if(currentScore < 4) currentScore++;
     score.textContent = `SCORE: ${currentScore} / 4`;
 });
 
@@ -77,7 +77,7 @@ const incorrectAnswerPoland = function() {
 polandA.addEventListener("click", function() {
     document.querySelector(".poland-correct").classList.remove("hidden");
     document.querySelector(".poland-incorrect").classList.add("hidden");
-    currentScore++;
+    if(currentScore < 4) currentScore++;
     score.textContent = `SCORE: ${currentScore} / 4`;
 });
 
